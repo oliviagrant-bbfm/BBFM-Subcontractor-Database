@@ -1,0 +1,79 @@
+
+/* Base styles */
+@font-face {
+    font-family: 'TT Chocolates';
+    src: url('https://fonts.cdnfonts.com/css/tt-chocolates') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'TT Chocolates', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #efeee9;
+    color: #020528;
+}
+/* Custom select styles for multi-select */
+select[multiple] {
+    background-image: none;
+    min-height: 38px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+/* Priority status badges */
+.badge-primary {
+    background-color: #020528;
+    color: #d5b480;
+}
+
+.badge-immediate {
+    background-color: #d5b480;
+    color: #020528;
+}
+
+.badge-escalation {
+    background-color: #020528;
+    color: #efeee9;
+}
+
+.badge-approved {
+    background-color: #efeee9;
+    color: #020528;
+    border: 1px solid #020528;
+}
+/* Animation for modal */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-animate {
+    animation: fadeIn 0.2s ease-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Tag chips */
+.tag-chip {
+    transition: all 0.2s ease;
+}
+
+.tag-chip:hover {
+    transform: translateY(-1px);
+}
